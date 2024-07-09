@@ -10,6 +10,7 @@ class Pessoa {
   getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
+
   describe(): string {
     return `This is ${this.firstName} ${this.lastName}`;
   }
