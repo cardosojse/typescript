@@ -1,5 +1,7 @@
 /* eslint-disable */
 
+// module mode
+
 // Tipos básicos (aqui ocorre inferência de tipos) NÃO FAZER ASSIM
 let nome: string = 'José'; // Qualquer tipo de strings
 let idade: number = 9; // 10, 1.57, -5.55, 0xf00d
