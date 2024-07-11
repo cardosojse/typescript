@@ -1,18 +1,18 @@
 interface User {
   name: string;
   age: number;
-  occupation?: string;
+  occupation: string;
 }
 
-interface Admin {
+export interface Admin {
   name: string;
   age: number;
-  role?: string;
+  role: string;
 }
 
-type Person = User | Admin;
+export type Person = User | Admin;
 
-const persons: Person[] = [
+export const persons: Person[] = [
   {
     name: 'Max',
     age: 25,
