@@ -2,7 +2,7 @@ let x;
 if (typeof x === 'undefined') x = 20;
 console.log(x * 2);
 
-export function squareOf(x: any) {
+export function squareOf(x: unknown) {
   if (typeof x === 'number') return x * x;
   return null;
 }
