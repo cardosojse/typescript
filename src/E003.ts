@@ -10,9 +10,9 @@ interface Admin {
   role: string;
 }
 
-export type Person = User | Admin;
+type Person = User | Admin;
 
-export const persons: Person[] = [
+const persons: Person[] = [
   {
     name: 'Max',
     age: 25,
@@ -35,8 +35,11 @@ export const persons: Person[] = [
   },
 ];
 
-const logPerson = (user: Person) => {
-  console.log(` - ${user.name}, ${user.age}`);
-};
+function logPerson(person: Person) {
+  let additionalInfo: string;
+  if ('role' in person) additionalInfo = person.role;
+  else additionalInfo = person.occupation;
+  console.log(`${person.name}, ${person.age} - ${additionalInfo}`);
+}
 
-persons.forEach(logPerson);
+logPerson(persons[0]);
