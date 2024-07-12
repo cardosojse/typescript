@@ -4,7 +4,7 @@ interface User {
   occupation: string;
 }
 
-interface Admin {
+export interface Admin {
   name: string;
   age: number;
   role: string;
