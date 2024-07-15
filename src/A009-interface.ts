@@ -1,15 +1,15 @@
 interface Rectangle {
-  width: number;
   height: number;
+  width: number;
 }
 
-interface ColoredRectangle extends Rectangle {
+interface Colored_Rectangle extends Rectangle {
   color: string;
 }
 
-const coloredRectangle: ColoredRectangle = {
-  width: 20,
-  height: 10,
+const coloredRectangle: Colored_Rectangle = {
+  height: 20,
+  width: 30,
   color: 'red',
 };
 
