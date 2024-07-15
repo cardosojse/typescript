@@ -39,7 +39,9 @@ function logPerson(person: Person) {
   let additionalInfo: string;
   if ('role' in person) additionalInfo = person.role;
   else additionalInfo = person.occupation;
-  console.log(`${person.name}, ${person.age} - ${additionalInfo}`);
+  console.log(`${person.name}, ${person.age}, ${additionalInfo}`);
 }
 
-logPerson(persons[0]);
+for (let i = 0; i < persons.length; i++) {
+  logPerson(persons[i]);
+}
