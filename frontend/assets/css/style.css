@@ -59,7 +59,7 @@ body {
   font-size: 10pt;
 }
 
-.form input[type] {
+.form-fields input[type] {
   width: 100%;
   border: 1px solid var(--border-color);
   font-size: 18px;
@@ -70,6 +70,12 @@ body {
 
 .form input[type]:focus {
   border-color: var(--medium-color);
+}
+
+.form .show-password {
+  display: flex;
+  gap: 5px;
+  margin: 0 0 20px;
 }
 
 .form button {
